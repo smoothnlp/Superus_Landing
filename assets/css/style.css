@@ -1,6 +1,3 @@
-/*
-font-family: 'Roboto', sans-serif;
-*/
 * {
   margin: 0;
   padding: 0;
@@ -17,123 +14,198 @@ a {
 }
 
 body {
-  background-color: #dbdff0;
-  font-family: 'Nunito Sans', sans-serif;
+  background: #0d0d0d;
+  font-family: 'Roboto Mono', monospace;
+  position: relative;
 }
-
+.background {
+  position: absolute;
+  margin: auto;
+  top: 0%;
+  z-index: -99;
+}
 header {
-  width: calc(100vw - 72px);
-  height: 60px;
+  width: 100%;
+  height: 80px;
   position: absolute;
   top: 0px;
-  padding: 0px 36px;
   z-index: 1;
-}
-.headerwrapper {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerwrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: auto;
-  max-width: 1300px;
+  padding: 0px 32px;
 }
 
 .superuslogo {
   display: inline;
-  max-width: 36px;
-  max-height: 36px;
-}
-.logoimg {
-  display: inline;
-  max-width: 36px;
-  max-height: 36px;
-  transform: translate(0, 2px);
-}
-.logoimg:hover {
-  opacity: 0.8;
+  max-width: 20px;
+  max-height: 20px;
+  margin-left: 3px;
 }
 
 .logotitle {
-  /* font-family: 'Roboto', sans-serif; */
-  font-size: 24px;
-  color: #29459f;
-  font-weight: 800;
-  line-height: 60px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.022em;
+  text-align: center;
+  margin-left: 8px;
 }
+.toprighttextwrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.sectiontextwrapper {
+}
+
 .sectiontext {
-  /* font-family: 'Roboto', sans-serif; */
+  color: #ffffffcc;
   font-size: 18px;
-  color: #29459f;
-  font-weight: 800;
-  line-height: 60px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.022em;
+  text-align: right;
 }
+.toprighticonwrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .sectiontext:hover {
   opacity: 0.7;
 }
+
 .inlinetext {
   display: inline;
 }
 .topleft {
   display: flex;
   align-items: center;
-  gap: 8px;
 }
 
 .topright {
   display: flex;
   align-items: center;
-  gap: 24px;
-}
-
-main {
-  height: 100vh;
-  position: relative;
-  padding: 0px 36px;
+  gap: 72px;
 }
 
 .maincontentwrapper {
   margin: auto;
-  width: calc(100% - 72px);
+  width: 80%;
   max-width: 1300px;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -45%);
-  display: grid;
-  grid-template-columns: 5fr 5fr;
+  padding-top: 80px;
 }
 
 .textcontentwrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 16px 32px 16px 0px;
+  width: 100%;
+  margin: auto;
+  margin-top: 128px;
+  text-align: center;
+  position: relative;
+}
+.logoimg {
+  opacity: 0.8;
+}
+.headline {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: #c8d1dc;
+  text-shadow: 0px 0px 20px rgba(64, 89, 155, 0.6);
 }
 
-.headline {
-  font-size: 50px;
-  color: #15234f;
-  font-weight: 1000;
-  margin-bottom: 24px;
-}
+/* .heanlineshadow{
+  position: absolute;
+  margin: auto;
+  top: 0px;
+font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  border: 0.5px solid ;
+  z-index: -1;
+
+} */
+
 .description {
-  font-size: 20px;
-  color: #29459f;
-  font-weight: 300;
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-align: center;
+  color: #ffffff99;
 }
-.tryforfree {
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  color: #fff;
-  background-color: #29459f;
+.calltoactionwrapper {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.producthunt {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  background: #3B3E4A;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
-  width: 200px;
-  height: 50px;
+  height: 54px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  border-top: 1px solid #9D9FA5;
+  border-left: 1px solid #82858C;
+  border-right: 1px solid #82858C;
+  border-bottom: 1px solid #63666F;
+}
+.producthunt img {
+  height: 30px;
+  width: auto;
+  margin-right: 16px;
+}
+.producthunt p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.022em;
+  color: #ffffff;
+}
+.tryforfree {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  background: #4554f7;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border-top: 1px solid #8f98fa;
+  border-left: 1px solid #7f8afa;
+  border-right: 1px solid #7f8afa;
+  border-bottom: 1px solid #6b77f9;
+}
+.tryforfree p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.022em;
+  color: #ffffff;
 }
 .tryforfree:hover {
-  background-color: #4867e6;
-  box-shadow: var(--shd, 2px 4px 6px rgba(0, 22, 144, 0.2));
 }
 .available {
   font-size: 16px;
@@ -142,172 +214,31 @@ main {
   font-weight: 100;
   margin-left: 12px;
 }
-.gifdemo {
+.gifdemowrappermid {
+  margin-top: 160px;
+  margin-bottom: 200px;
+}
+.gifdemowrappermid img {
   border-radius: 8px;
+  border-top: 1px solid #494C6C;
+  border-left: 1px solid #232435;
+  border-right: 1px solid #232435;
+  border-bottom: 1px solid #232435;
 }
-
-@media only screen and (max-width: 1300px) {
-  .maincontentwrapper {
-    grid-template-columns: 5fr 5fr;
-  }
-  .textcontentwrapper {
-    padding: 0px 24px 0px 0px;
-  }
-  .headline {
-    font-size: calc(100vw * 0.04 - 2px);
-    margin-bottom: 24px;
-  }
-  .superuslogo {
-    width: calc(100vw*0.04 - 16px);
-    height: calc(100vw*0.04 - 16px);
-  }
-  .logotitle {
-    font-size: calc(100vw*0.02 - 2px);
-  }
-  .description {
-    font-size: 20px;
-    max-width: 550px;
-  }
+footer {
+  height: 80px;
+  width: 100%;
 }
-
-@media only screen and (max-width: 1000px) {
-  .maincontentwrapper {
-    top: 60%;
-    transform: translate(-50%, -60%);
-  }
-  .gifdemowrapper {
-    display: none;
-  }
-  .maincontentwrapper {
-    grid-template-columns: 1fr;
-  }
-  .textcontentwrapper {
-    text-align: center;
-    padding: 0;
-  }
-  .headline {
-    font-size: calc(100vw*0.013 + 25px);
-    margin-bottom: 16px;
-  }
-  .superuslogo {
-    width: 24px;
-    height: 24px;
-  }
-  .logotitle {
-    font-size: 18px;
-  }
-
-  .description {
-    font-size: 18px;
-    max-width: 600px;
-    margin: auto;
-  }
-  .gifdemowrappermid {
-    width: 460px;
-    margin: auto;
-    margin-bottom: 42px;
-    margin-top: 80px;
-  }
-
-  .downloadwrapper {
-    width: 100%;
-  }
-
-  .available {
-    display: block;
-    margin-left: 0px;
-    margin-top: 12px;
-  }
-
-  .tryforfree {
-    left: 0px;
-  }
+.footerwrapper {
+  display: flex;
+  padding: 0px 32px;
+  justify-content: space-between;
 }
-
-@media only screen and (max-width: 550px) {
-  .gifdemowrappermid {
-    width: 100%;
-    max-width: 460px;
-    margin: auto;
-    margin-bottom: 42px;
-    margin-top: 80px;
-  }
-
-  .sectiontextwrapper {
-    display: none;
-  }
-
-  .headline {
-    width: calc(100%);
-    font-size: 32px;
-  }
-  header {
-    width: calc(100vw - 36px);
-    padding: 0px 18px;
-  }
-  .maincontentwrapper {
-    width: calc(100% - 36px);
-  }
-  .description {
-    font-size: 18px;
-    max-width: 600px;
-    margin: auto;
-  }
-  .available {
-    display: block;
-    margin-left: 0px;
-    margin-top: 16px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .maincontentwrapper {
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .headline {
-    font-size: 28px;
-  }
-  .logoimg {
-    width: 30px;
-    height: 30px;
-  }
-  .description {
-    font-size: 16px;
-  }
-  .tryforfree {
-    font-size: 18px;
-  }
-  .available {
-    margin-top: 8px;
-  }
-}
-
-@media only screen and (min-width: 1001px) {
-  .gifdemowrappermid {
-    display: none;
-  }
-}
-
-@media only screen and (max-height: 900px) {
-  .headline {
-    margin-bottom: calc(100vh * 0.08 - 56px);
-  }
-  .gifdemowrappermid {
-    margin-top: calc(100vh * 0.64 - 496px);
-    margin-bottom: calc(100vh * 0.2 - 138px);
-  }
-}
-@media only screen and (max-height: 850px) {
-  .headline {
-    margin-bottom: 12px;
-  }
-  .gifdemowrappermid {
-    margin-top: 48px;
-    margin-bottom: 32px;
-  }
-}
-@media only screen and (max-height: 800px) {
-  main {
-    height: 800px;
-  }
+.copyright {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFFCC;
 }
