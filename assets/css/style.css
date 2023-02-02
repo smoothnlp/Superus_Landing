@@ -97,7 +97,8 @@ header {
 }
 
 .header-nav-menu-sectionlink {
-  color: #ffffffcc;
+  color: #ffffff;
+   opacity: 0.8;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
@@ -110,7 +111,7 @@ header {
 }
 
 .header-nav-menu-sectionlink:hover {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .header-nav-menu-media-wrapper {
@@ -124,7 +125,7 @@ header {
 }
 
 .header-nav-menu-media-img:hover {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .nav-menu-button {
@@ -197,7 +198,6 @@ header {
   border-left: 1px solid #82858c;
   border-right: 1px solid #82858c;
   border-bottom: 1px solid #63666f;
-  transition: all 180ms ease-in-out;
 }
 .main-content-introduction-button-producthunt img {
   height: 30px;
@@ -212,8 +212,12 @@ header {
   color: #ffffff;
 }
 .main-content-introduction-button-producthunt:hover {
-  background: hsl(228, 11%, 30%);
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+  background: hsl(228, 16%, 36%);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
+  border-top: 1px solid hsl(225, 4%, 68%);
+  border-left: 1px solid hsl(222, 4%, 58%);
+  border-right: 1px solid hsl(222, 4%, 58%);
+  border-bottom: 1px solid hsl(225, 6%, 46%);
 }
 
 .main-content-introduction-button-tryforfree {
@@ -229,7 +233,6 @@ header {
   border-left: 1px solid #7f8afa;
   border-right: 1px solid #7f8afa;
   border-bottom: 1px solid #6b77f9;
-  transition: all 180ms ease-in-out;
 }
 .main-content-introduction-button-tryforfree p {
   font-weight: 700;
@@ -240,7 +243,12 @@ header {
 }
 
 .main-content-introduction-button-tryforfree:hover {
-  background: hsl(235, 98%, 65%);
+  background: hsl(235, 98%, 68%);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.6);
+  border-top: 1px solid hsl(235, 91%, 82%);
+  border-left: 1px solid hsl(235, 92%, 79%);
+  border-right: 1px solid hsl(235, 92%, 79%);
+  border-bottom: 1px solid hsl(235, 92%, 75%);
   box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
 }
 
