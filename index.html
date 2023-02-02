@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="background">
-        <svg width="1728" height="1550" viewBox="0 0 1728 1550" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="background-lighteffect-svg">
+        <svg viewbox="0 0 1728 1550" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_f_987_128711)">
-                <path d="M77 766.5L586.406 -95H1113.2L1651 783.5L1281.26 1293.5H451.955L77 766.5Z" fill="url(#paint0_linear_987_128711)" fill-opacity="0.6" />
+                <path d="M77 766.5L586.406 -95H1113.2L1651 783.5L1281.26 1293.5H451.955L77 766.5Z" fill="url(#paint0_linear_987_128711)" fill-opacity="0.8" />
             </g>
             <defs>
                 <filter id="filter0_f_987_128711" x="-179" y="-351" width="2086" height="1900.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -26,7 +26,7 @@
                 </filter>
                 <linearGradient id="paint0_linear_987_128711" x1="864" y1="-95" x2="864" y2="1566" gradientUnits="userSpaceOnUse">
                     <stop stop-color="#284366" />
-                    <stop offset="0.409103" stop-color="#1E1F48" stop-opacity="0.590897" />
+                    <stop offset="0.409103" stop-color="#1E1F48" stop-opacity="0.6" />
                     <stop offset="1" stop-color="#341379" stop-opacity="0" />
                 </linearGradient>
             </defs>
@@ -34,29 +34,48 @@
 
     </div>
     <header>
-        <div class="headerwrapper">
+        <div class="header-wrapper">
             <a href="#">
-                <div class="topleft">
-                    <img src="./assets/img/superus_logo.png" alt="" class="superuslogo">
-                    <p class="inlinetext logotitle">Superus</p>
+                <div class="header-left">
+                    <img src="./assets/img/superus_logo.png" alt="" class="superus-logo-img">
+                    <p class="inlinetext superus-logo-text">Superus</p>
                 </div>
             </a>
-            <div class="topright">
-                <div class="toprighttextwrapper">
-                    <a href="" target="_blank" class="sectiontextwrapper">
-                        <p class="inlinetext sectiontext">Manifesto</p>
-                    </a>
-                    <a href="" target="_blank" class="sectiontextwrapper">
-                        <p class="inlinetext sectiontext">Roadmap</p>
-                    </a>
+            <div class="header-nav">
+                <div class="header-nav-menu">
+                    <div class="header-nav-menu-sectionlink-wrapper">
+                        <a href="https://medium.superus.space/my-ideal-solution-to-information-overload-122fda2451a5" target="_blank" class="header-nav-menu-sectionlink">
+                            <p class="inlinetext header-nav-menu-sectionlink-text">Manifesto</p>
+                        </a>
+                        <a href="" target="_blank" class="header-nav-menu-sectionlink">
+                            <p class="inlinetext header-nav-menu-sectionlink-text">Roadmap</p>
+                        </a>
+                        <a href="https://twitter.com/superusapp" target="_blank" class="header-nav-menu-sectionlink nav-menu-sectionlink-media">
+                            <p class="inlinetext header-nav-menu-sectionlink-text ">Twitter</p>
+                        </a>
+                        <a href="https://discord.com/invite/f2YBbyYmXr" target="_blank" class="header-nav-menu-sectionlink nav-menu-sectionlink-media">
+                            <p class="inlinetext header-nav-menu-sectionlink-text">Discord</p>
+                        </a>
+                    </div>
+                    <div class="header-nav-menu-media-wrapper">
+                        <a href="https://twitter.com/superusapp" target="_blank">
+                            <img src="./assets/img/twitter_icon.png" alt="" class="header-nav-menu-media-img">
+                        </a>
+                        <a href="https://discord.com/invite/f2YBbyYmXr" target="_blank">
+                            <img src="./assets/img/discord_icon.png" alt="" class="header-nav-menu-media-img">
+                        </a>
+                    </div>
                 </div>
-                <div class="toprighticonwrapper">
-                    <a href="https://twitter.com/superusapp" target="_blank">
-                        <img src="./assets/img/twitter_icon.png" alt="" class="logoimg">
-                    </a>
-                    <a href="https://discord.com/invite/f2YBbyYmXr" target="_blank">
-                        <img src="./assets/img/discord_icon.png" alt="" class="logoimg">
-                    </a>
+                <div class="nav-menu-button">
+                    <svg class="nav-menu-icon-show" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="3" width="20" height="2" fill="#fff"></rect>
+                        <rect x="2" y="11" width="20" height="2" fill="#fff"></rect>
+                        <rect x="2" y="19" width="20" height="2" fill="#fff"></rect>
+                    </svg>
+                    <svg class="nav-menu-icon-hide" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5.41431" y="4" width="20" height="2" transform="rotate(45 5.41431 4)" fill="#fff"></rect>
+                        <rect x="19.5564" y="5.41431" width="20" height="2" transform="rotate(135 19.5564 5.41431)" fill="#fff"></rect>
+                    </svg>
                 </div>
 
 
@@ -64,51 +83,72 @@
         </div>
     </header>
     <main>
-        <div class="maincontentwrapper">
-            <div class="textcontentwrapper">
-                <div>
-                    <p class="headline">Meet Superus, Where Web-Native minds build and share.</p>
+        <div class="main-content-wrapper">
+            <div class="main-content-introduction-wrapper">
+                <div class="main-content-introduction-text-wrapper">
+                    <p class="main-content-introduction-headline1">Meet Superus, Where Web-Native minds build and share.</p>
                     <!-- <p class="heanlineshadow">Where Web-Native minds build and share.</p> -->
-                    <p class="description">Almighty canvas where you can surf the web, manage tools, create content and collaborate with others, all in one place.</p>
+                    <p class="main-content-introduction-description">Almighty canvas where you can surf the web, manage tools, create content and collaborate with others, all in one place.</p>
                 </div>
 
-                <div class="calltoactionwrapper">
+                <div class="main-content-introduction-button-wrapper">
                     <a href="https://superusapp.typeform.com/wlsignup">
-                        <button class="producthunt">
+                        <button class="main-content-introduction-button-producthunt">
                             <img src="/assets/img/producthuntno1.png" alt="">
                             <p>No.1 on Product Hunt</p>
 
                         </button>
                     </a>
                     <a href="https://superusapp.typeform.com/wlsignup">
-                        <button class="tryforfree">
+                        <button class="main-content-introduction-button-tryforfree">
                             <p>Try for Free</p>
-                            </button>
+                        </button>
                     </a>
                 </div>
             </div>
-            <div class="gifdemowrappermid">
+            <div class="main-content-heroimg-wrapper">
                 <img src="./assets/img/basic sturcture.png" alt="" class="gifdemo">
             </div>
         </div>
     </main>
     <footer>
-        <div class="footerwrapper">
-            <div class="copyright">
-                <p><span style="font-size: 24px;">©</span>2023 Superus </p>
+        <div class="footer-wrapper">
+            <div class="footer-copyright-wrapper">
+                <p><span style="font-size: 1.4em;">©</span>2023 Superus </p>
             </div>
-            <div class="toprighttextwrapper">
-                <a href="" target="_blank" class="sectiontextwrapper">
+            <div class="footer-links-wrapper">
+                <a href="" target="_blank" class="footer-links">
                     <p class="inlinetext sectiontext">Terms & Conditions</p>
                 </a>
-                <a href="" target="_blank" class="sectiontextwrapper">
+                <a href="" target="_blank" class="footer-links">
                     <p class="inlinetext sectiontext">Privacy Policies</p>
                 </a>
-                <a href="" target="_blank" class="sectiontextwrapper">
+                <a href="" target="_blank" class="footer-links">
                     <p class="inlinetext sectiontext">Media Kit</p>
                 </a>
             </div>
         </div>
     </footer>
+    <script>
+        (function () {
+            let showingMobileNavMenu = false;
+
+            function toggleMobileNavMenu() {
+                showingMobileNavMenu = !showingMobileNavMenu;
+
+                if (showingMobileNavMenu) {
+                    document.body.classList.add("showing-menu");
+                } else {
+                    document.body.classList.remove("showing-menu");
+                }
+            }
+
+            function init() {
+                document.querySelector(".nav-menu-button").addEventListener("click", toggleMobileNavMenu);
+            }
+
+            init();
+        })();
+    </script>
 </body>
 </html>
