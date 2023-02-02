@@ -22,17 +22,20 @@ body {
 }
 
 .background-lighteffect-svg {
-	padding-bottom: 100%;
+  padding-bottom: 100%;
   width: 100%;
   position: absolute;
   margin: auto;
   top: 0%;
   z-index: -99;
-  overflow: hidden;
   display: inline-block;
-	vertical-align: middle;
+  vertical-align: middle;
+  overflow: hidden;
 }
-
+.background-lighteffect-svg svg{
+  position: absolute;
+  top: 0px;
+}
 .inlinetext {
   display: inline;
 }
@@ -349,7 +352,7 @@ footer {
     display: unset;
   }
 
-  .main-content-heroimg-wrapper img{
+  .main-content-heroimg-wrapper img {
     border-top: 1px solid #494c6c;
     border-left: 1px solid hsl(237, 20%, 24%);
     border-right: 1px solid hsl(237, 20%, 24%);
@@ -357,44 +360,70 @@ footer {
   }
 
   .main-content-introduction-button-wrapper{
-    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
   }
 
-  .main-content-introduction-button-producthunt, .main-content-introduction-button-tryforfree{
-    width: 270px;
-    justify-content: center;
+  .main-content-introduction-button-producthunt,
+  .main-content-introduction-button-tryforfree {
+    padding:8px 16px;
+    height: 48px;
   }
-footer{
-  height: 120px;
-}
-.footer-wrapper{
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.footer-copyright-wrapper{
-  text-align: start;
-  font-size: 14px;
-}
-.footer-links-wrapper{
-  gap: 24px;
-}
-.footer-links{
-  font-size: 14px;
-  text-align: start;
-}
+  .main-content-introduction-button-producthunt img {
+    margin-right: 8px;
+    height: 20px;
+  }
+  .main-content-introduction-button-producthunt p,
+  .main-content-introduction-button-tryforfree p {
+    font-size: 14px;
+  }
+
+  .main-content-heroimg-wrapper{
+        margin-top: 80px;
+    margin-bottom: 120px;
+  }
+
+  footer {
+    height: 120px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer-copyright-wrapper {
+    text-align: start;
+    font-size: 14px;
+  }
+  .footer-links-wrapper {
+    gap: 24px;
+  }
+  .footer-links {
+    font-size: 14px;
+    text-align: start;
+  }
 }
 
 @media screen and (max-width: 400px) {
+    .main-content-introduction-headline1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .main-content-introduction-description{
+    font-size: 14px;
+    line-height: 20px;
+  }
   .header-wrapper {
     padding: 0px 20px;
   }
   .header-nav-menu-sectionlink-wrapper {
     padding: 0px 20px;
   }
-  .main-content-wrapper{
+  .main-content-wrapper {
     width: calc(100vw - 40px);
   }
-
+  .main-content-introduction-wrapper {
+    margin-top: 64px;
+  }
 }
 
 body.showing-menu main,
