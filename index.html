@@ -16,24 +16,27 @@
     <meta property="og:title" content="Superus">
     <meta property="og:description" content="Collect webpages, take notes, create multi-media content, and share to internet in a visually appealing and engaging way.">
     <meta property="og:image" content="https://github.com/smoothnlp/Superus_Landing/blob/main/assets/img/superus-opengraph-wwmbs.png?raw=true">
-    
+
     <!-- Twitter Meta Tags -->
     <meta property="twitter:domain" content="www.superusapp.com">
     <meta property="twitter:url" content="https://www.superusapp.com/">
     <meta name="twitter:title" content="Superus">
     <meta name="twitter:description" content="Collect webpages, take notes, create multi-media content, and share to internet in a visually appealing and engaging way.">
     <meta name="twitter:image" content="https://github.com/smoothnlp/Superus_Landing/blob/main/assets/img/superus-opengraph-wwmbs.png?raw=true">
-    
+
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCHR4KQPWF"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-SCHR4KQPWF');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SCHR4KQPWF');
     </script>
 </head>
 <body>
@@ -115,7 +118,7 @@
                     <p class="main-content-introduction-description">Collect webpages, take notes, create multi-media content, and share to internet in a visually appealing and engaging way.</p>
                 </div>
 
-                <div class="main-content-introduction-button-wrapper">
+                <div class="main-content-introduction-button-wrapper" id="cta">
                     <a href="https://www.producthunt.com/products/superus">
                         <button class="main-content-introduction-button-producthunt">
                             <img src="/assets/img/producthuntno1.png" alt="">
@@ -148,6 +151,7 @@
         </div>
     </footer>
     <script>
+        // Mobile Menu bar
         (function () {
             let showingMobileNavMenu = false;
 
@@ -167,6 +171,24 @@
 
             init();
         })();
+        // Mobile Menu bar end
+
+        // Rearrange the element for mobile
+        var cta = document.getElementById("cta");
+        var heroImgWrapper = document.querySelector(".main-content-heroimg-wrapper");
+        var mainContentWrapper = document.querySelector(".main-content-wrapper");
+
+        function moveCta() {
+            if (window.innerWidth<540) {
+                mainContentWrapper.insertBefore(cta, heroImgWrapper.nextSibling);
+            } else {
+                var introductionWrapper = document.querySelector(".main-content-introduction-wrapper");
+                introductionWrapper.appendChild(cta);
+            }
+        }
+        moveCta();
+        window.addEventListener("resize", moveCta);
+        // Rearrange the element for mobile end
     </script>
 </body>
 </html>

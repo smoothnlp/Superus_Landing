@@ -417,9 +417,9 @@ footer {
     font-size: 20px;
     line-height: 28px;
   }
-.main-content-introduction-headline1 br{
-  display: none;
-}
+  .main-content-introduction-headline1 br {
+    display: none;
+  }
   .main-content-introduction-description {
     margin-top: 16px;
     font-size: 14px;
@@ -434,17 +434,28 @@ footer {
   .main-content-wrapper {
     width: calc(100vw - 40px);
   }
+  .main-content-heroimg-wrapper{
+    margin-top: 36px;
+    margin-bottom: 0px;
+  }
   .main-content-introduction-wrapper {
     margin-top: 54px;
   }
 
-  .main-content-introduction-button-wrapper{
-flex-direction: column;
+  .main-content-introduction-button-wrapper {
+    gap: 8px;
+    margin-top: 48px;
+    margin-bottom: 80px;
   }
 
-.main-content-introduction-button-wrapper a button{
-width: 200px;
-justify-content: center;
+   .main-content-introduction-button-wrapper a button {
+    padding: 12px;
+    height: 44px;
+  }
+
+  .main-content-introduction-button-wrapper a button {
+    font-size: 12px;
+    justify-content: center;
   }
   .footer-wrapper {
     padding: 0px 20px;
